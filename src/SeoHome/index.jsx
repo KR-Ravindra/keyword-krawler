@@ -18,8 +18,6 @@ class SeoHome extends React.Component {
             showOutput: false,
             showGraphCompare : false
 
-
-
         }
     }
 
@@ -30,6 +28,7 @@ class SeoHome extends React.Component {
 
     handleCancel = (curFlag) => {
         this.setState(this.state.showOutput ? { showOutput: false } : { showOutput: true })
+        this.setState({showGraphCompare: false})
 
     }
 
@@ -91,7 +90,7 @@ class SeoHome extends React.Component {
                     </div>
 
 
-                    <h1>SEO Tool</h1>
+                    <h1>Keyword-Krawler</h1>
                     <InputForm handleRecommendationClick={() => this.handleRecommendationClick(this.state.showOutput)} />
 
                     <br />
